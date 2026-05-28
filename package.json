@@ -1,5 +1,5 @@
 {
-  "name": "tui",
+  "name": "pi-dstui",
   "version": "0.1.0",
   "description": "Lisp DSL runtime for composable, on-demand TUI components",
   "keywords": ["pi-package"],
