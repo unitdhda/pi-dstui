@@ -1,6 +1,10 @@
 # tui
 
-Rich, interactive terminal UI components for pi agents — defined in a small Lisp DSL, persisted to disk, and rendered as full-screen overlays on demand.
+https://github.com/user-attachments/assets/4e62e1ad-fd89-4266-b615-a0d0a344da12
+
+Rich, interactive terminal UI components for pi agent
+
+ — defined in a small Lisp DSL, persisted to disk, and rendered as full-screen overlays on demand.
 
 Most agent interactions collapse to text: the agent asks a question, you type an answer, and both sides guess at structure. `tui` replaces that back-and-forth with purpose-built input widgets. Instead of typing `"option 2"` in response to a numbered list, you navigate a radio picker. Instead of describing a number with a note about the valid range, you turn a rotary dial. The agent gets a typed value; you get a clear, keyboard-driven UI.
 
