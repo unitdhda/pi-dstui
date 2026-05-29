@@ -72,8 +72,9 @@ export default function (pi: ExtensionAPI) {
       }
 
       const result = await ctx.ui.custom<unknown>(makeUiRunner(found.def, params.config ?? {}));
+      const resultText = (() => { try { return JSON.stringify(result); } catch { return String(result); } })();
       return {
-        content: [{ type: "text", text: `Ran ${params.type}` }],
+        content: [{ type: "text", text: `Ran ${params.type}\nresult: ${resultText}` }],
         details: {
           success: true,
           componentId: params.componentId,
